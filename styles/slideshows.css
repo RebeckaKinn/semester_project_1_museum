@@ -84,9 +84,10 @@
   z-index: 10; 
 }
 
-.nav-circles .circle div {
+.nav-circles .circle span {
   --b: 2px; 
   height: 25px; 
+  display: inline-block;
   aspect-ratio: cos(30deg);
   clip-path: 
     polygon(50% 0,-50% 50%,50% 100%,150% 50%,50% 0,
@@ -107,14 +108,14 @@
 }
 
 
-input#event-slide1:checked ~ .nav-circles label[for="event-slide1"] div,
-input#event-slide2:checked ~ .nav-circles label[for="event-slide2"] div,
-input#event-slide3:checked ~ .nav-circles label[for="event-slide3"] div,
-input#exh-slide1:checked ~ .nav-circles label[for="exh-slide1"] div,
-input#exh-slide2:checked ~ .nav-circles label[for="exh-slide2"] div,
-input#exh-slide3:checked ~ .nav-circles label[for="exh-slide3"] div,
-input#exh-slide4:checked ~ .nav-circles label[for="exh-slide4"] div,
-input#exh-slide5:checked ~ .nav-circles label[for="exh-slide5"] div {
+input#event-slide1:checked ~ .nav-circles label[for="event-slide1"] span,
+input#event-slide2:checked ~ .nav-circles label[for="event-slide2"] span,
+input#event-slide3:checked ~ .nav-circles label[for="event-slide3"] span,
+input#exh-slide1:checked ~ .nav-circles label[for="exh-slide1"] span,
+input#exh-slide2:checked ~ .nav-circles label[for="exh-slide2"] span,
+input#exh-slide3:checked ~ .nav-circles label[for="exh-slide3"] span,
+input#exh-slide4:checked ~ .nav-circles label[for="exh-slide4"] span,
+input#exh-slide5:checked ~ .nav-circles label[for="exh-slide5"] span {
   aspect-ratio: cos(30deg);
   clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
   background-color: var(--color-purple);
