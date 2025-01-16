@@ -74,17 +74,17 @@
 
     /*evolution*/
     --img-small-mammoth: url(../img/mammoth-1257288_1920.jpg);
-    --img-small-evolution: url(../img/_517c421f-9996-4a3c-945c-1a11369ed5a1.jpg);
+    --img-small-evolution: url(../img/evolution.jpg);
     --img-small-aeria-dinosaur:url(../img/toa-heftiba-412579.jpg);
 
     /*cosmology*/
     --img-small-man-in-suit: url(../img/andrew-ruiz-348421.jpg);
-    --img-small-planet: url(../img/_b2cf3786-5701-46fa-ab8e-38d62a4058c51.jpg);
+    --img-small-planet: url(../img/planet.jpg);
     --img-small-library: var(--img-small-aeria1);
 
     /*ecology*/
     --img-small-big-ant: url(../img/genoa-956405_1920.jpg);
-    --img-small-planet2: url(../img/_f6285288-dfc6-4b14-b273-48b8f6b56c6a1.jpg);
+    --img-small-planet2: url(../img/planet2.jpg);
     --img-small-man-working: url(../img/people-219985_1280.jpg);
 
     
