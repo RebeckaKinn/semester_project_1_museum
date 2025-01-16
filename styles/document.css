@@ -1,15 +1,15 @@
 .main-container{
     grid-template-rows: 90px 1fr auto;
 } 
-.info-label div {
+.info-label span:first-of-type {
     display: inline-block;
     transform-origin: center center;
     transition: transform 0.3s ease;
   }
 
 
-#documentation1:checked ~ div label[for="documentation1"] div,
-#documentation2:checked ~ div label[for="documentation2"] div{
+#documentation1:checked ~ div label[for="documentation1"] span:first-of-type,
+#documentation2:checked ~ div label[for="documentation2"] span:first-of-type{
     transform: rotate(90deg);
     }
 
