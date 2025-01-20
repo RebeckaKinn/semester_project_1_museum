@@ -7,9 +7,13 @@
 .banner-img{
     width: 100%;
     height: 150px;
+    cursor: pointer;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+}
+.banner-img:hover {
+    transform: scale(1.3); 
 }
 
 .title-banner-1{

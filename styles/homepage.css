@@ -86,10 +86,12 @@
 
     .explore-banner-1{
         background-image: var(--explore-banner1);
+        background-position-y: 20%;
         
     }
     .explore-banner-2{
         background-image: var(--explore-banner2);
+        background-position-y: 55%;
     }
     .explore-banner-3{
         background-image: var(--explore-banner3);
