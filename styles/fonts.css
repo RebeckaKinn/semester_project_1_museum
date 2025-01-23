@@ -64,8 +64,11 @@ a, button{
     font-style: italic;
 }
 
+.bolder{
+    font-weight: 500 !important;
+}
 .medium{
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 .small-medium{
     font-weight: 300;
