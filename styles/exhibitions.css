@@ -123,9 +123,9 @@
     /* .banner-img {
         position: relative;
     } */
-    .exhibition-input:checked + .banner-img {
-        transform: translateX(50%);
-    -webkit-transform: translateX(50%);
+    .exhibition-input:checked ~.banner-collective label {
+        transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     }
 }
 
