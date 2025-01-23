@@ -83,13 +83,15 @@
 
         </header>
 
-        <main role="main" class="side-margin-20 padding-top-2rem">
         <!-- ADD FIELDSET -->
+        <main role="main" class="side-margin-20 padding-top-2rem">
+            
             <input id="documentation1" type="radio" name="documentation" 
                 class="hidden" checked="checked">
             <input id="documentation2" type="radio" name="documentation" 
                 class="hidden">
-            <div class="flex col gap-1rem-0 txt-align-right">
+            <fieldset class="flex col gap-1rem-0 txt-align-right">
+                <legend class="hidden" aria-label="Documentation menu"></legend>
                 <label for="documentation1"
                     class="info-label">
                     <span class="btn-size">⮞</span>
@@ -101,7 +103,7 @@
                     <span class="btn-size">⮞</span>
                     <span class="btn-size">Terms and Conditions</span>
                 </label>
-            </div>
+            </fieldset>
 
             <div class="documentation-content">
                 <div id="privacy-policy" class="document-group">

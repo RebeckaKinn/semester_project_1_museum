@@ -8,8 +8,8 @@
   }
 
 
-#documentation1:checked ~ div label[for="documentation1"] span:first-of-type,
-#documentation2:checked ~ div label[for="documentation2"] span:first-of-type{
+#documentation1:checked ~ fieldset label[for="documentation1"] span:first-of-type,
+#documentation2:checked ~ fieldset label[for="documentation2"] span:first-of-type{
     transform: rotate(90deg);
     }
 
