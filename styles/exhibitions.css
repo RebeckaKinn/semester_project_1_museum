@@ -111,7 +111,7 @@
         width: 70%;
         height: 100px;
     }
-    .banner-collective {
+    /* .banner-collective {
         position: sticky;
         top: 70px;
         right: 0;
@@ -120,13 +120,19 @@
         white-space: nowrap;
         transition: 0.8s;
     }
-    /* .banner-img {
-        position: relative;
-    } */
-    .exhibition-input:checked ~.banner-collective label {
+
+
+    .exhibition-input{
+        transform: translateY(20px); 
+        transition: all 1s ease; 
+        overflow: hidden; 
+    }
+    .exhibition-input:checked ~ .banner-collective label {
         transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
-    }
+
+    
+    } */
 }
 
  /* @media screen and (min-width: 1150px){
