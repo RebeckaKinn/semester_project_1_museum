@@ -68,16 +68,22 @@
     
 }
 .banner-container{
-    display: flex;
-    align-items: center;
-    
-    overflow: hidden;
-
+    width: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
     transition: all 0.3s ease;
     color: var(--color-white); 
+    box-shadow: 0px 8px 10px -5px var(--color-shadow);
+    
+    div{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-shadow-image);
+         padding: 0 5%; 
+
+    }
 }
 
 .banner-container label {
@@ -85,11 +91,11 @@
     cursor: pointer;
     transition: all 0.3s ease; /* Adjust the transition duration as per your preference */
     flex-grow: 1; /* Ensure initial state doesn't stretch */
+    
+
 }
 
-.banner-container label span {
-    padding: 0 5%;
-}
+
 
 #cosmology:checked ~ .banner-container .grid-3-4:nth-child(1),
 #evolution:checked ~ .banner-container .grid-3-4:nth-child(2),
@@ -110,72 +116,72 @@
     transform: scale(1.1); 
 } */
 
-#cosmology:checked ~ .banner-container{
+#cosmology2:checked ~ .banner-container{
     background-image: var(--title-img1);    
 }
-#evolution:checked ~ .banner-container{
+#evolution2:checked ~ .banner-container{
     background-image: var(--title-img2);    
 }
-#biology:checked ~ .banner-container{
+#biology2:checked ~ .banner-container{
     background-image: var(--title-img3);    
 }
-#ecology:checked ~ .banner-container{
+#ecology2:checked ~ .banner-container{
     background-image: var(--title-img4);    
 }
-#robotics:checked ~ .banner-container{
+#robotics2:checked ~ .banner-container{
     background-image: var(--title-img5);    
 }
 
 
-input:not(:checked) ~ .banner-container label {
-    background-color: var(--color-shadow-image);
+input:not(:checked) ~ .banner-container label span{
+    transform: scale(0.8); 
 }
-#cosmology:checked ~ .banner-container label[for="cosmology"]{
+#cosmology2:checked ~ .banner-container label[for="cosmology2"] span{
     color: var(--color-yellow);
-    background-color: transparent;
+
     transform: scale(1.1); 
 }
-#biology:checked ~ .banner-container label[for="biology"]{
+#biology2:checked ~ .banner-container label[for="biology2"] span{
     color: var(--color-yellow);
-    background-color: transparent;
+
     transform: scale(1.1); 
 }
-#evolution:checked ~ .banner-container label[for="evolution"]{
+#evolution2:checked ~ .banner-container label[for="evolution2"] span{
     color: var(--color-yellow);
-    background-color: transparent;
+
     transform: scale(1.1); 
 }
-#ecology:checked ~ .banner-container label[for="ecology"]{
+#ecology2:checked ~ .banner-container label[for="ecology2"] span{
     color: var(--color-yellow);
-    background-color: transparent;
+
     transform: scale(1.1); 
 }
-#robotics:checked ~ .banner-container label[for="robotics"]{
+#robotics2:checked ~ .banner-container label[for="robotics2"] span{
     color: var(--color-yellow);
-    background-color: transparent;
+
     transform: scale(1.1); 
 }
 
 
 
 
-#cosmology:checked ~ .exhibition-content{
+#cosmology2:checked ~ .exhibition-content{
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
 }
-#evolution:checked ~ .exhibition-content{
+#evolution2:checked ~ .exhibition-content{
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
 }
-#biology:checked ~ .exhibition-content{
+#biology2:checked ~ .exhibition-content{
     transform: translateX(-200%);
     -webkit-transform: translateX(-200%);
 }
-#ecology:checked ~ .exhibition-content{
+#ecology2:checked ~ .exhibition-content{
     transform: translateX(-300%);
     -webkit-transform: translateX(-300%);
 }
-#robotics:checked ~ .exhibition-content{
+#robotics2:checked ~ .exhibition-content{
     transform: translateX(-400%);
     -webkit-transform: translateX(-400%);
 }
@@ -301,6 +307,23 @@ input:not(:checked) ~ .banner-container label {
        }
        
 }  */
+  
+@media screen and (max-width: 999px){
+    .hidden-exhibition-mobile {
+        display: none !important;
+        z-index: -1 !important;
+      }
+}
+
+@media screen and (min-width: 1000px){
+    .hidden-exhibition-desktop {
+        display: none !important;
+        z-index: -1 !important;
+      }
+}
+
+
+
 @media screen and (min-width: 1440px){
     .banner-img{
         width: 50%;
