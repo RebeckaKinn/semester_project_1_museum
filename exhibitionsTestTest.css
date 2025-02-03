@@ -70,8 +70,25 @@
 .banner-container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    
     overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transition: all 0.3s ease;
+    color: var(--color-white); 
+}
+
+.banner-container label {
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Adjust the transition duration as per your preference */
+    flex-grow: 1; /* Ensure initial state doesn't stretch */
+}
+
+.banner-container label span {
+    padding: 0 5%;
 }
 
 #cosmology:checked ~ .banner-container .grid-3-4:nth-child(1),
@@ -81,6 +98,66 @@
 #robotics:checked ~ .banner-container .grid-3-4:nth-child(5){
     grid-template-columns: 100%;
 }
+
+/* #cosmology:checked ~ .banner-container label[for="cosmology"],
+#evolution:checked ~ .banner-container label[for="evolution"],
+#biology:checked ~ .banner-container label[for="biology"],
+#ecology:checked ~ .banner-container label[for="ecology"],
+#robotics:checked ~ .banner-container label[for="robotics"] {
+    flex-grow: 1; 
+    background-image: var(--title-img1); 
+    color: var(--color-white); 
+    transform: scale(1.1); 
+} */
+
+#cosmology:checked ~ .banner-container{
+    background-image: var(--title-img1);    
+}
+#evolution:checked ~ .banner-container{
+    background-image: var(--title-img2);    
+}
+#biology:checked ~ .banner-container{
+    background-image: var(--title-img3);    
+}
+#ecology:checked ~ .banner-container{
+    background-image: var(--title-img4);    
+}
+#robotics:checked ~ .banner-container{
+    background-image: var(--title-img5);    
+}
+
+
+input:not(:checked) ~ .banner-container label {
+    background-color: var(--color-shadow-image);
+}
+#cosmology:checked ~ .banner-container label[for="cosmology"]{
+    color: var(--color-yellow);
+    background-color: transparent;
+    transform: scale(1.1); 
+}
+#biology:checked ~ .banner-container label[for="biology"]{
+    color: var(--color-yellow);
+    background-color: transparent;
+    transform: scale(1.1); 
+}
+#evolution:checked ~ .banner-container label[for="evolution"]{
+    color: var(--color-yellow);
+    background-color: transparent;
+    transform: scale(1.1); 
+}
+#ecology:checked ~ .banner-container label[for="ecology"]{
+    color: var(--color-yellow);
+    background-color: transparent;
+    transform: scale(1.1); 
+}
+#robotics:checked ~ .banner-container label[for="robotics"]{
+    color: var(--color-yellow);
+    background-color: transparent;
+    transform: scale(1.1); 
+}
+
+
+
 
 #cosmology:checked ~ .exhibition-content{
     transform: translateX(0%);
