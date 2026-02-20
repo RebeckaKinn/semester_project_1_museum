@@ -1,4 +1,4 @@
-function header(){
+function header() {
     return /*HTML*/`
      <a href="index.html" class="flex">
                 <picture class="logo margin-1rem">
@@ -60,7 +60,7 @@ function header(){
     `;
 }
 
-function setActiveMenu(){
+function setActiveMenu() {
     const links = document.querySelectorAll("#menu a");
     const currentPage =
         window.location.pathname.split("/").pop() || "index.html";
@@ -68,7 +68,7 @@ function setActiveMenu(){
     links.forEach(link => {
         const linkPage = link.getAttribute("href");
 
-        if(linkPage === currentPage){
+        if (linkPage === currentPage) {
             link.parentElement.classList.add("color-orange");
         }
     });
