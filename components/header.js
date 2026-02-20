@@ -1,5 +1,5 @@
 function header() {
-    return /*HTML*/`
+  return /*HTML*/ `
      <a href="index.html" class="flex">
                 <picture class="logo margin-1rem">
                     <source srcset="img/logo/color-light-logo.svg" media="(min-width: 900px)">
@@ -61,15 +61,14 @@ function header() {
 }
 
 function setActiveMenu() {
-    const links = document.querySelectorAll("#menu a");
-    const currentPage =
-        window.location.pathname.split("/").pop() || "index.html";
+  const links = document.querySelectorAll("#menu a");
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-    links.forEach(link => {
-        const linkPage = link.getAttribute("href");
+  links.forEach((link) => {
+    const linkPage = link.getAttribute("href");
 
-        if (linkPage === currentPage) {
-            link.parentElement.classList.add("color-orange");
-        }
-    });
+    if (linkPage === currentPage) {
+      link.parentElement.classList.add("color-orange");
+    }
+  });
 }

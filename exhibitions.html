@@ -1,19 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Exhibitions - Community Science Museum">
-    <meta name="description" content="Discover our interactive exhibitions in robots, AI, ecology, cosmology, medicine, and evolution. Perfect for curious minds of all ages!">
-    <meta name="keywords" content="science exhibitions, robotics, AI, ecology, cosmology, medicine, evolution, family activities, STEM learning">
+    <meta name="title" content="Exhibitions - Community Science Museum" />
+    <meta
+      name="description"
+      content="Discover our interactive exhibitions in robots, AI, ecology, cosmology, medicine, and evolution. Perfect for curious minds of all ages!"
+    />
+    <meta
+      name="keywords"
+      content="science exhibitions, robotics, AI, ecology, cosmology, medicine, evolution, family activities, STEM learning"
+    />
 
     <meta name="language" content="English" />
     <title>Exhibitions - Community Science Museum</title>
-    
+
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/common.css" />
 
- 
     <link rel="stylesheet" href="styles/slideshows.css" />
     <link rel="stylesheet" href="styles/exhibitions.css" />
     <link
@@ -21,533 +26,825 @@
       type="image/x-icon"
       href="img/logo/dark-color-small-logo.svg"
     />
-    
-</head>
-<body>
-
+  </head>
+  <body onload="initExhibitionPage()">
     <div class="background-svg main-container">
+      <header
+        id="header"
+        role="banner"
+        class="flex row align-center menu-padding"
+      ></header>
 
-        <header id="header" role="banner" class="flex row align-center menu-padding"></header>
+      <main role="main">
+        <section class="heading-image exhibitions-banner bottom-shadow">
+          <div class="height side-margin-20 flex col justify-end">
+            <h1 class="large-heading medium color-orange">Exhibitions</h1>
+          </div>
+        </section>
 
-        <main role="main">
-            <section class="heading-image exhibitions-banner bottom-shadow">
-                <div class="height side-margin-20 flex col justify-end">
-                    <h1 class="large-heading medium color-orange">Exhibitions</h1>
+        <section>
+          <section class="side-margin-20">
+            <h2 class="large-title">
+              Discover the Wonders of Knowledge and Innovation
+            </h2>
+            <p>
+              Dive into exhibitions that reveal the mysteries of the universe,
+              the marvels of life, and the innovations shaping our future. From
+              cosmology and evolution to robotics and AI, discover how science
+              and technology transform our understanding of the world.
+            </p>
+          </section>
 
-                </div>
-            </section>
+          <section
+            id="exhibition-desktop"
+            class="hidden-exhibition-mobile"
+          ></section>
 
-           <section>
-            <section class="side-margin-20">
-                <h2 class="large-title">Discover the Wonders of Knowledge and Innovation</h2>
-                <p>Dive into exhibitions that reveal the mysteries of the universe, the marvels of life, and the innovations shaping our future. From cosmology and evolution to robotics and AI, discover how science and technology transform our understanding of the world.</p>
-            </section>
+          <section id="exhibition-mobile" class="hidden-exhibition-desktop">
+            <fieldset class="exhibition-layout">
+              <legend class="hidden">Explore Our Exhibitions</legend>
+              <div class="exhibition-container">
+                <input
+                  type="radio"
+                  id="cosmology"
+                  name="exhibitions"
+                  class="hidden exhibition-input"
+                />
+                <span class="banner-img full-size flex title-banner-1 grid-3-4">
+                  <label
+                    for="cosmology"
+                    class="background-shadow btn-side-padding center"
+                  >
+                    <span
+                      class="btn-size txt-align-center white-btn color-white width-110 remove-margin"
+                      >COSMOLOGY</span
+                    >
+                  </label>
+                </span>
+                <article class="exhibition-info flex col gap-1rem-0">
+                  <div class="side-margin-20">
+                    <p>
+                      Explore the wonders of our cosmos. Our fantastic
+                      exhibition, ‘The Sky Above Us’, explores the night sky and
+                      what we can see and know about the universe around us.
+                      We’ll locate the various constellations and galaxies that
+                      can be seen and learn a bit about the early navigators who
+                      used the stars to travel by.
+                    </p>
+                    <p>
+                      Follow the journey of our solar exploration: from early
+                      Arab traders, to Galileo’s telescope, to the latest
+                      exploration of the planets in our solar system.
+                    </p>
+                    <h2 class="h1 color-purple">Upcoming Events</h2>
+                  </div>
 
-            <section id="exhibition-desktop" class="hidden-exhibition-mobile">
-                <fieldset class="exhibition-layout">
-                    <legend class="hidden">Explore Our Exhibitions</legend>
+                  <div
+                    class="event-container event-img-1 bottom-inset-top-shadow side-margin-20"
+                  >
+                    <article
+                      class="background-shadow btn-side-padding placement bottom-shadow"
+                    >
+                      <h3 class="color-orange">
+                        Visiting Professor of Aeronautics
+                      </h3>
+                      <p class="med-paragraph color-white">
+                        It is our pleasure to announce that Prof Sheila Widnall
+                        from the Massachusetts Institute of Technology will be
+                        delivering 3 lectures on the development of aeronautics
+                        and where the future lies in this exciting ‘space’.
+                      </p>
+                    </article>
+                  </div>
 
+                  <section
+                    class="slideshow-container"
+                    role="region"
+                    aria-label="Cosmology Image Slideshow"
+                  >
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="cosmology-slider"
+                      id="cos-slide1"
+                      aria-hidden="true"
+                      checked
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="cosmology-slider"
+                      id="cos-slide2"
+                      aria-hidden="true"
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="cosmology-slider"
+                      id="cos-slide3"
+                      aria-hidden="true"
+                    />
 
-                    <div class="exhibition-container-desktop">
-                        <input type="radio" id="cosmology2" name="exhibitions2" class="hidden exhibition-input" checked="checked">
-                        <input type="radio" id="evolution2" name="exhibitions2" class="hidden exhibition-input">
-                        <input type="radio" id="biology2" name="exhibitions2" class="hidden exhibition-input">
-                        <input type="radio" id="ecology2" name="exhibitions2" class="hidden exhibition-input">
-                        <input type="radio" id="robotics2" name="exhibitions2" class="hidden exhibition-input">
-
-                        <div class="banner-container">
-                            <div>
-                                <label for="cosmology2" class="center">
-                                    <span class="btn-size txt-align-center remove-margin">COSMOLOGY</span>
-                                </label>
-
-                                <label for="evolution2" class="center">
-                                    <span class="btn-size txt-align-center remove-margin">EVOLUTION</span>
-                                </label>
-    
-                                <label for="biology2" class="center">
-                                    <span class="btn-size txt-align-center remove-margin">BIOLOGY AND MEDICINE</span>
-                                </label>
-    
-
-                                <label for="ecology2" class="center">
-                                    <span class="btn-size txt-align-center remove-margin">ECOLOGY</span>
-                                </label>
-
-    
-
-                                <label for="robotics2" class="center">
-                                    <span class="btn-size txt-align-center remove-margin">ROBOTICS AND AI</span>
-                                </label>
-
-                            </div>
-
-                        </div>
-
-
-                        <section class="exhibition-content">
-
-                            <div class="information-section">
-                                <article class="exhibition-info flex col gap-1rem-0">
-
-                                    <div class="side-margin-20">
-                                        <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
-                                        <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
-                                        <h2 class="h1 color-purple">Upcoming Events</h2>
-                                    </div>
-                                    <div class="event-container event-img-1 bottom-inset-top-shadow side-margin-20">
-                                        <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                            <h3 class="color-orange">Visiting Professor of Aeronautics</h3>
-                                            <p class="med-paragraph color-white">It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
-                                        </article>
-                                    </div>
-        
-                                    <section class="slideshow-container" role="region" aria-label="Cosmology Image Slideshow">
-                                        <input class="hidden" type="radio" name="cosmology-slider2" id="cos2-slide1" aria-hidden="true" checked>
-                                        <input class="hidden" type="radio" name="cosmology-slider2" id="cos2-slide2" aria-hidden="true">
-                                        <input class="hidden" type="radio" name="cosmology-slider2" id="cos2-slide3" aria-hidden="true">
-                                    
-                                        <div class="slides" aria-live="polite">
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                                <img src="img/andrew-ruiz-348421.jpg" alt="A close up image of a statue with an astronaut suit." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                                <img src="img/planet.jpg" alt="An image of planet earth with the sun shining behind it." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                                <img src="img/library-1132573_1920.jpg" alt="Area view of the staircase in the library section in the museum." loading="lazy">
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="arrows">
-                                            <label for="cos2-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="cos2-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="cos2-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="cos2-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="cos2-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="cos2-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                        </div>
-                                    </section>
-                                </article>
-                            </div>
-
-                            <div class="information-section">
-                                <article class="exhibition-info flex col gap-1rem-0">
-
-                                    <div class="side-margin-20">
-                                        <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world</p>
-                                        <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
-                                        <h2 class="h1 color-purple">Upcoming Events</h2>
-                                    </div>
-                                    <div class="event-container event-img-2 bottom-inset-top-shadow side-margin-20">
-                                        <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                            <h3 class="color-orange">Night in the Museum</h3>
-                                            <p class="med-paragraph color-white">Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
-                                        </article>
-                                    </div>
-        
-                                    <section class="slideshow-container">
-                                        <input class="hidden" type="radio" name="evolution-slider2" id="evo2-slide1" aria-hidden="true" checked>
-                                        <input class="hidden" type="radio" name="evolution-slider2" id="evo2-slide2" aria-hidden="true">
-                                        <input class="hidden" type="radio" name="evolution-slider2" id="evo2-slide3" aria-hidden="true">
-                                    
-                                        <div class="slides" aria-live="polite">
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                                <img src="img/mammoth-1257288_1920.jpg" alt="An image of a mammoth sceleton inside the museum." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                                <img src="img/evolution.jpg" alt="Drawn representation of the evolution of man, from ape to human." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                                <img src="img/toa-heftiba-412579.jpg" alt="An image of a huge whale-skeleton haning from the roof of the main area of the museum." loading="lazy">
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="arrows">
-                                            <label for="evo2-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="evo2-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="evo2-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="evo2-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="evo2-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="evo2-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                        </div>
-                                    </section>
-                                </article>
-                            </div>
-
-                            <div class="information-section">
-                                <article class="exhibition-info flex col gap-1rem-0">
-
-                                    <div class="side-margin-20">
-                                        <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.</p>
-                                        <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.</p>
-                                        <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
-                                    </div>
-                                    <section class="slideshow-container">
-                                        <input class="hidden" type="radio" name="biology-slider2" id="bio2-slide1" aria-hidden="true" checked>
-                                        <input class="hidden" type="radio" name="biology-slider2" id="bio2-slide2" aria-hidden="true">
-                                        <input class="hidden" type="radio" name="biology-slider2" id="bio2-slide3" aria-hidden="true">
-                                    
-                                        <div class="slides" aria-live="polite">
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                                <img src="img/heart-2607178_1920.jpg" alt="A close up image of a human heart sculpture." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                                <img src="img/jesse-orrico-60373.jpg" alt="A close up image of a human head sculpture where the nerves are highlighted." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                                <img src="img/samuel-zeller-113381.jpg" alt="A statue of a man showing the placements of the intestens." loading="lazy">
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="arrows">
-                                            <label for="bio2-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="bio2-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="bio2-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="bio2-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="bio2-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="bio2-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                        </div>
-                                    </section>
-                                </article>
-                            </div>
-
-                            <div class="information-section">
-                                <article class="exhibition-info flex col gap-1rem-0">
-
-                                    <div class="side-margin-20">
-                                        <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet. In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
-                                        <h2 class="h1 color-purple">Upcoming Events</h2>
-                                    </div>
-                                    <div class="event-container event-img-3 bottom-inset-top-shadow side-margin-20">
-                                        <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                            <h3 class="color-orange">Energetica Exhibition on Loan</h3>
-                                            <p class="med-paragraph color-white">On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
-                                        </article>
-                                    </div>
-        
-                                    <section class="slideshow-container">
-                                        <input class="hidden" type="radio" name="ecology-slider2" id="eco2-slide1" aria-hidden="true" checked>
-                                        <input class="hidden" type="radio" name="ecology-slider2" id="eco2-slide2" aria-hidden="true">
-                                        <input class="hidden" type="radio" name="ecology-slider2" id="eco2-slide3" aria-hidden="true">
-                                    
-                                        <div class="slides" aria-live="polite">
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                                <img src="img/genoa-956405_1920.jpg" alt="Big statue of ants placed by the children exhibition." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                                <img src="img/planet2.jpg" alt="An illustration of planet earth with windmills, mountains, feilds of grass and glaciers." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                                <img src="img/people-219985_1280.jpg" alt="A close up image of a man looking into a microscope." loading="lazy">
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="arrows">
-                                            <label for="eco2-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="eco2-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="eco2-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="eco2-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="eco2-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="eco2-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                        </div>
-                                    </section>
-                                </article>
-                            </div>
-
-                            <div class="information-section">
-                                <article class="exhibition-info flex col gap-1rem-0">
-
-                                    <div class="side-margin-20">
-                                        <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
-                                    </div>
-                                    <section class="slideshow-container">
-                                        <input class="hidden" type="radio" name="robotics-slider2" id="rob2-slide1" aria-hidden="true" checked>
-                                        <input class="hidden" type="radio" name="robotics-slider2" id="rob2-slide2" aria-hidden="true">
-                                        <input class="hidden" type="radio" name="robotics-slider2" id="rob2-slide3" aria-hidden="true">
-                                    
-                                        <div class="slides" aria-live="polite">
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                                <img src="img/bigrobot.jpg" alt="Image of a big robot incased at the museum." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                                <img src="img/robot.jpg" alt="A close up image of a small robot." loading="lazy">
-                                            </div>
-                                            <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                                <img src="img/samuel-zeller-158996.jpg" alt="A close up image of a young girl wearning VR-glasses." loading="lazy">
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="arrows">
-                                            <label for="rob2-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="rob2-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="rob2-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="rob2-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                            <label for="rob2-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                            <label for="rob2-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                        </div>
-                                    </section>
-                                </article>
-                            </div>
-
-                        </section>
-                    </fieldset>
-            </section>
-
-            <section class="hidden-exhibition-desktop">
-                <fieldset class="exhibition-layout">
-                    <legend class="hidden">Explore Our Exhibitions</legend>
-                    <div class="exhibition-container">
-                        <input type="radio" id="cosmology" name="exhibitions" class="hidden exhibition-input">
-                        <span class="banner-img full-size flex title-banner-1 grid-3-4">
-                            <label for="cosmology" class="background-shadow btn-side-padding center">
-                                <span class="btn-size txt-align-center white-btn color-white width-110 remove-margin">COSMOLOGY</span>
-                            </label>
-                        </span>
-                        <article class="exhibition-info flex col gap-1rem-0">
-                            <div class="side-margin-20">
-                                <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
-                                <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
-                                <h2 class="h1 color-purple">Upcoming Events</h2>
-                            </div>
-
-                            <div class="event-container event-img-1 bottom-inset-top-shadow side-margin-20">
-                                <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                    <h3 class="color-orange">Visiting Professor of Aeronautics</h3>
-                                    <p class="med-paragraph color-white">It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
-                                </article>
-                            </div>
-
-                            <section class="slideshow-container" role="region" aria-label="Cosmology Image Slideshow">
-                                <input class="hidden" type="radio" name="cosmology-slider" id="cos-slide1" aria-hidden="true" checked>
-                                <input class="hidden" type="radio" name="cosmology-slider" id="cos-slide2" aria-hidden="true">
-                                <input class="hidden" type="radio" name="cosmology-slider" id="cos-slide3" aria-hidden="true">
-                            
-                                <div class="slides" aria-live="polite">
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                        <img src="img/andrew-ruiz-348421.jpg" alt="A close up image of a statue with an astronaut suit." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                        <img src="img/planet.jpg" alt="An image of planet earth with the sun shining behind it." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                        <img src="img/library-1132573_1920.jpg" alt="Area view of the staircase in the library section in the museum." loading="lazy">
-                                    </div>
-                                </div>
-                            
-                                <div class="arrows">
-                                    <label for="cos-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="cos-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="cos-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="cos-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="cos-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="cos-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                </div>
-                            </section>
-                            
-                        </article>
-                    </div>
-                    
-                    <div class="exhibition-container">
-                        <input type="radio" id="evolution" name="exhibitions" class="hidden exhibition-input">
-                        <span class="banner-img full-size flex title-banner-2 grid-3-4">
-                            <label for="evolution" class="background-shadow btn-side-padding center">
-                                <span class="btn-size txt-align-center white-btn color-white width-110 remove-margin">EVOLUTION</span>
-                            </label>
-                        </span>
-                        <article class="exhibition-info flex col gap-1rem-0">
-                            <div class="side-margin-20">
-                                <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world</p>
-                                <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
-                                <h2 class="h1 color-purple">Upcoming Events</h2>
-                            </div>
-
-                            <div class="event-container event-img-2 bottom-inset-top-shadow side-margin-20">
-                                <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                    <h3 class="color-orange">Night in the Museum</h3>
-                                    <p class="med-paragraph color-white">Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
-                                </article>
-                            </div>
-
-                            <section class="slideshow-container">
-                                <input class="hidden" type="radio" name="evolution-slider" id="evo-slide1" aria-hidden="true" checked>
-                                <input class="hidden" type="radio" name="evolution-slider" id="evo-slide2" aria-hidden="true">
-                                <input class="hidden" type="radio" name="evolution-slider" id="evo-slide3" aria-hidden="true">
-                            
-                                <div class="slides" aria-live="polite">
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                        <img src="img/mammoth-1257288_1920.jpg" alt="An image of a mammoth sceleton inside the museum." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                        <img src="img/evolution.jpg" alt="Drawn representation of the evolution of man, from ape to human." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                        <img src="img/toa-heftiba-412579.jpg" alt="An image of a huge whale-skeleton haning from the roof of the main area of the museum." loading="lazy">
-                                    </div>
-                                </div>
-                            
-                                <div class="arrows">
-                                    <label for="evo-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="evo-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="evo-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="evo-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="evo-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="evo-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                </div>
-                            </section>
-                        </article>
-                    </div>
-                    
-
-                    <div class="exhibition-container">
-                        <input type="radio" id="biology" name="exhibitions" class="hidden exhibition-input">
-                        <span class="banner-img full-size flex title-banner-3 grid-3-4">
-                            <label for="biology" class="background-shadow btn-side-padding center">
-                                <span class="btn-size txt-align-center white-btn color-white width-110 remove-margin">BIOLOGY AND MEDICINE</span>
-                            </label>
-                        </span>
-                        <article class="exhibition-info flex col gap-1rem-0">
-                            <div class="side-margin-20">
-                                <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.</p>
-                                <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.</p>
-                                <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
-                            </div>
-
-                            <section class="slideshow-container">
-                                <input class="hidden" type="radio" name="biology-slider" id="bio-slide1" aria-hidden="true" checked>
-                                <input class="hidden" type="radio" name="biology-slider" id="bio-slide2" aria-hidden="true">
-                                <input class="hidden" type="radio" name="biology-slider" id="bio-slide3" aria-hidden="true">
-                            
-                                <div class="slides" aria-live="polite">
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                        <img src="img/heart-2607178_1920.jpg" alt="A close up image of a human heart sculpture." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                        <img src="img/jesse-orrico-60373.jpg" alt="A close up image of a human head sculpture where the nerves are highlighted." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                        <img src="img/samuel-zeller-113381.jpg" alt="A statue of a man showing the placements of the intestens." loading="lazy">
-                                    </div>
-                                </div>
-                            
-                                <div class="arrows">
-                                    <label for="bio-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="bio-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="bio-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="bio-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="bio-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="bio-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                </div>
-                            </section>
-                        </article>
+                    <div class="slides" aria-live="polite">
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 1 of 3"
+                      >
+                        <img
+                          src="img/andrew-ruiz-348421.jpg"
+                          alt="A close up image of a statue with an astronaut suit."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 2 of 3"
+                      >
+                        <img
+                          src="img/planet.jpg"
+                          alt="An image of planet earth with the sun shining behind it."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 3 of 3"
+                      >
+                        <img
+                          src="img/library-1132573_1920.jpg"
+                          alt="Area view of the staircase in the library section in the museum."
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
 
-                    <div class="exhibition-container">
-                        <input type="radio" id="robotics" name="exhibitions" class="hidden exhibition-input">
-                        <span class="banner-img full-size flex title-banner-4 grid-3-4">
-                            <label for="robotics" class="background-shadow btn-side-padding center">
-                                <span class="btn-size txt-align-center white-btn color-white width-110 remove-margin">ROBOTICS AND AI</span>
-                            </label>
-                        </span>
-                        <article class="exhibition-info flex col gap-1rem-0">
-                            <div class="side-margin-20">
-                                <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
-                            </div>
-                            <section class="slideshow-container">
-                                <input class="hidden" type="radio" name="robotics-slider" id="rob-slide1" aria-hidden="true" checked>
-                                <input class="hidden" type="radio" name="robotics-slider" id="rob-slide2" aria-hidden="true">
-                                <input class="hidden" type="radio" name="robotics-slider" id="rob-slide3" aria-hidden="true">
-                            
-                                <div class="slides" aria-live="polite">
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                        <img src="img/bigrobot.jpg" alt="Image of a big robot incased at the museum." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                        <img src="img/robot.jpg" alt="A close up image of a small robot." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                        <img src="img/samuel-zeller-158996.jpg" alt="A close up image of a young girl wearning VR-glasses." loading="lazy">
-                                    </div>
-                                </div>
-                            
-                                <div class="arrows">
-                                    <label for="rob-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="rob-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="rob-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="rob-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="rob-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="rob-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                </div>
-                            </section>
-                        </article>
+                    <div class="arrows">
+                      <label
+                        for="cos-slide3"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="cos-slide2"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="cos-slide1"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="cos-slide3"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="cos-slide2"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="cos-slide1"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                    </div>
+                  </section>
+                </article>
+              </div>
+
+              <div class="exhibition-container">
+                <input
+                  type="radio"
+                  id="evolution"
+                  name="exhibitions"
+                  class="hidden exhibition-input"
+                />
+                <span class="banner-img full-size flex title-banner-2 grid-3-4">
+                  <label
+                    for="evolution"
+                    class="background-shadow btn-side-padding center"
+                  >
+                    <span
+                      class="btn-size txt-align-center white-btn color-white width-110 remove-margin"
+                      >EVOLUTION</span
+                    >
+                  </label>
+                </span>
+                <article class="exhibition-info flex col gap-1rem-0">
+                  <div class="side-margin-20">
+                    <p>
+                      For centuries, philosophers and scientists have wrestled
+                      with the question of our origins. Where do we come from
+                      and how did we get here? Since Darwin proposed his theory
+                      of evolution we have had a framework for exploring and
+                      understanding our place in this world
+                    </p>
+                    <p>
+                      Discover the origins of life on this planet and how the
+                      species we know today have evolved our time. You can also
+                      take some time to meet a few of the creatures who didn’t
+                      survive, including our Woolly Mammoth, the Dodos, and a
+                      number of dinosaurs too.
+                    </p>
+                    <h2 class="h1 color-purple">Upcoming Events</h2>
+                  </div>
+
+                  <div
+                    class="event-container event-img-2 bottom-inset-top-shadow side-margin-20"
+                  >
+                    <article
+                      class="background-shadow btn-side-padding placement bottom-shadow"
+                    >
+                      <h3 class="color-orange">Night in the Museum</h3>
+                      <p class="med-paragraph color-white">
+                        Get your family together for an exciting night in the
+                        museum as you sleep over beside dinosaurs and science
+                        displays. Bring your own sleeping bag and get ready to
+                        rough it as we go exploring the wonders of science.
+                      </p>
+                    </article>
+                  </div>
+
+                  <section class="slideshow-container">
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="evolution-slider"
+                      id="evo-slide1"
+                      aria-hidden="true"
+                      checked
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="evolution-slider"
+                      id="evo-slide2"
+                      aria-hidden="true"
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="evolution-slider"
+                      id="evo-slide3"
+                      aria-hidden="true"
+                    />
+
+                    <div class="slides" aria-live="polite">
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 1 of 3"
+                      >
+                        <img
+                          src="img/mammoth-1257288_1920.jpg"
+                          alt="An image of a mammoth sceleton inside the museum."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 2 of 3"
+                      >
+                        <img
+                          src="img/evolution.jpg"
+                          alt="Drawn representation of the evolution of man, from ape to human."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 3 of 3"
+                      >
+                        <img
+                          src="img/toa-heftiba-412579.jpg"
+                          alt="An image of a huge whale-skeleton haning from the roof of the main area of the museum."
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
 
-                    <div class="exhibition-container">
-                        <input type="radio" id="ecology" name="exhibitions" class="hidden exhibition-input">
-                        <span class="banner-img full-size flex title-banner-5 grid-3-4">
-                            <label for="ecology" class="background-shadow btn-side-padding center">
-                                <span class="btn-size txt-align-center white-btn color-white width-110 remove-margin">ECOLOGY</span>
-                            </label>
-                        </span>
-                        <article class="exhibition-info flex col gap-1rem-0">
-                            <div class="side-margin-20">
-                                <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet. In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
-                                <h2 class="h1 color-purple">Upcoming Events</h2>
-                            </div>
+                    <div class="arrows">
+                      <label
+                        for="evo-slide3"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="evo-slide2"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="evo-slide1"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="evo-slide3"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="evo-slide2"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="evo-slide1"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                    </div>
+                  </section>
+                </article>
+              </div>
 
-                            <div class="event-container event-img-3 bottom-inset-top-shadow side-margin-20">
-                                <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                    <h3 class="color-orange">Energetica Exhibition on Loan</h3>
-                                    <p class="med-paragraph color-white">On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
-                                </article>
-                            </div>
+              <div class="exhibition-container">
+                <input
+                  type="radio"
+                  id="biology"
+                  name="exhibitions"
+                  class="hidden exhibition-input"
+                />
+                <span class="banner-img full-size flex title-banner-3 grid-3-4">
+                  <label
+                    for="biology"
+                    class="background-shadow btn-side-padding center"
+                  >
+                    <span
+                      class="btn-size txt-align-center white-btn color-white width-110 remove-margin"
+                      >BIOLOGY AND MEDICINE</span
+                    >
+                  </label>
+                </span>
+                <article class="exhibition-info flex col gap-1rem-0">
+                  <div class="side-margin-20">
+                    <p>
+                      From micro-organisms to the human body, major
+                      breakthroughs in biology are offering us unique insights
+                      into the great wonders of the tiny world.
+                    </p>
+                    <p>
+                      For many people their life expectancy is much longer and
+                      their quality of life much improved, thanks to the growth
+                      of our understanding of medicine. Over a series of
+                      exhibits we explore the history of medicine and take a
+                      look at some major breakthroughs including the discovery
+                      of penicillin and the first heart transplant.
+                    </p>
+                    <p>
+                      Many of our great medicinal discoveries have come not only
+                      from the lab, but also from observing animals in the wild.
+                      Often our fellow creatures have beat us to it.
+                    </p>
+                  </div>
 
-                            <section class="slideshow-container">
-                                <input class="hidden" type="radio" name="ecology-slider" id="eco-slide1" aria-hidden="true" checked>
-                                <input class="hidden" type="radio" name="ecology-slider" id="eco-slide2" aria-hidden="true">
-                                <input class="hidden" type="radio" name="ecology-slider" id="eco-slide3" aria-hidden="true">
-                            
-                                <div class="slides" aria-live="polite">
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
-                                        <img src="img/genoa-956405_1920.jpg" alt="Big statue of ants placed by the children exhibition." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
-                                        <img src="img/planet2.jpg" alt="An illustration of planet earth with windmills, mountains, feilds of grass and glaciers." loading="lazy">
-                                    </div>
-                                    <div class="slider-img" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
-                                        <img src="img/people-219985_1280.jpg" alt="A close up image of a man looking into a microscope." loading="lazy">
-                                    </div>
-                                </div>
-                            
-                                <div class="arrows">
-                                    <label for="eco-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="eco-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="eco-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="eco-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                    <label for="eco-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                                    <label for="eco-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                                </div>
-                            </section>
-                        </article>
+                  <section class="slideshow-container">
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="biology-slider"
+                      id="bio-slide1"
+                      aria-hidden="true"
+                      checked
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="biology-slider"
+                      id="bio-slide2"
+                      aria-hidden="true"
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="biology-slider"
+                      id="bio-slide3"
+                      aria-hidden="true"
+                    />
+
+                    <div class="slides" aria-live="polite">
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 1 of 3"
+                      >
+                        <img
+                          src="img/heart-2607178_1920.jpg"
+                          alt="A close up image of a human heart sculpture."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 2 of 3"
+                      >
+                        <img
+                          src="img/jesse-orrico-60373.jpg"
+                          alt="A close up image of a human head sculpture where the nerves are highlighted."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 3 of 3"
+                      >
+                        <img
+                          src="img/samuel-zeller-113381.jpg"
+                          alt="A statue of a man showing the placements of the intestens."
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
 
-                </fieldset>
-            </section>
+                    <div class="arrows">
+                      <label
+                        for="bio-slide3"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="bio-slide2"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="bio-slide1"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="bio-slide3"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="bio-slide2"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="bio-slide1"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                    </div>
+                  </section>
+                </article>
+              </div>
 
-            <section class="center txt-align-center margin-top-2rem">
-                <a href="contact.html" class="button btn-size btn-side-padding">VISIT US</a>
-                <p class="remove-margin">for any questions or concerns.</p>
-                <p class="remove-margin">We are looking forward to see you.</p>
-            </section>
-           </section>
-           
-        </main>
+              <div class="exhibition-container">
+                <input
+                  type="radio"
+                  id="robotics"
+                  name="exhibitions"
+                  class="hidden exhibition-input"
+                />
+                <span class="banner-img full-size flex title-banner-4 grid-3-4">
+                  <label
+                    for="robotics"
+                    class="background-shadow btn-side-padding center"
+                  >
+                    <span
+                      class="btn-size txt-align-center white-btn color-white width-110 remove-margin"
+                      >ROBOTICS AND AI</span
+                    >
+                  </label>
+                </span>
+                <article class="exhibition-info flex col gap-1rem-0">
+                  <div class="side-margin-20">
+                    <p>
+                      The information revolution is here and robotics and
+                      artificial intelligence are the science of the future.
+                      From useful home applications of AI to industrial uses of
+                      robotics, the future is here. You can even say hello and
+                      shake the hand of Rob the Robot.
+                    </p>
+                  </div>
+                  <section class="slideshow-container">
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="robotics-slider"
+                      id="rob-slide1"
+                      aria-hidden="true"
+                      checked
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="robotics-slider"
+                      id="rob-slide2"
+                      aria-hidden="true"
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="robotics-slider"
+                      id="rob-slide3"
+                      aria-hidden="true"
+                    />
 
-        <footer id="footer" class="side-padding-20 footer-grid" role="contentinfo"></footer>
+                    <div class="slides" aria-live="polite">
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 1 of 3"
+                      >
+                        <img
+                          src="img/bigrobot.jpg"
+                          alt="Image of a big robot incased at the museum."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 2 of 3"
+                      >
+                        <img
+                          src="img/robot.jpg"
+                          alt="A close up image of a small robot."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 3 of 3"
+                      >
+                        <img
+                          src="img/samuel-zeller-158996.jpg"
+                          alt="A close up image of a young girl wearning VR-glasses."
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="arrows">
+                      <label
+                        for="rob-slide3"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="rob-slide2"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="rob-slide1"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="rob-slide3"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="rob-slide2"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="rob-slide1"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                    </div>
+                  </section>
+                </article>
+              </div>
+
+              <div class="exhibition-container">
+                <input
+                  type="radio"
+                  id="ecology"
+                  name="exhibitions"
+                  class="hidden exhibition-input"
+                />
+                <span class="banner-img full-size flex title-banner-5 grid-3-4">
+                  <label
+                    for="ecology"
+                    class="background-shadow btn-side-padding center"
+                  >
+                    <span
+                      class="btn-size txt-align-center white-btn color-white width-110 remove-margin"
+                      >ECOLOGY</span
+                    >
+                  </label>
+                </span>
+                <article class="exhibition-info flex col gap-1rem-0">
+                  <div class="side-margin-20">
+                    <p>
+                      As we learn more and more of the impact humans are having
+                      on the planet, the more important it becomes that
+                      scientists explore how to create a sustainable future not
+                      just for humans but for the whole planet. In our ecology
+                      section of the museum, we unpack the dangers we currently
+                      face including global warming, extinction of species, and
+                      pollution. But we also focus on the positive ways we can
+                      all contribute to a brighter future.
+                    </p>
+                    <h2 class="h1 color-purple">Upcoming Events</h2>
+                  </div>
+
+                  <div
+                    class="event-container event-img-3 bottom-inset-top-shadow side-margin-20"
+                  >
+                    <article
+                      class="background-shadow btn-side-padding placement bottom-shadow"
+                    >
+                      <h3 class="color-orange">
+                        Energetica Exhibition on Loan
+                      </h3>
+                      <p class="med-paragraph color-white">
+                        On loan from the NEMO Science Museum in Amsterdam, the
+                        Energetica exhibition is coming to the Community Science
+                        Museum. It’s a series of installations that allow
+                        visitors to experience the power of the elements as we
+                        harness them. From solar energy powering lighting, to
+                        ‘Wind Island’ that shows how turbines are able to use
+                        and control wind to create power.
+                      </p>
+                    </article>
+                  </div>
+
+                  <section class="slideshow-container">
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="ecology-slider"
+                      id="eco-slide1"
+                      aria-hidden="true"
+                      checked
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="ecology-slider"
+                      id="eco-slide2"
+                      aria-hidden="true"
+                    />
+                    <input
+                      class="hidden"
+                      type="radio"
+                      name="ecology-slider"
+                      id="eco-slide3"
+                      aria-hidden="true"
+                    />
+
+                    <div class="slides" aria-live="polite">
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 1 of 3"
+                      >
+                        <img
+                          src="img/genoa-956405_1920.jpg"
+                          alt="Big statue of ants placed by the children exhibition."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 2 of 3"
+                      >
+                        <img
+                          src="img/planet2.jpg"
+                          alt="An illustration of planet earth with windmills, mountains, feilds of grass and glaciers."
+                          loading="lazy"
+                        />
+                      </div>
+                      <div
+                        class="slider-img"
+                        role="group"
+                        aria-roledescription="slide"
+                        aria-label="Slide 3 of 3"
+                      >
+                        <img
+                          src="img/people-219985_1280.jpg"
+                          alt="A close up image of a man looking into a microscope."
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="arrows">
+                      <label
+                        for="eco-slide3"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="eco-slide2"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="eco-slide1"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="eco-slide3"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                      <label
+                        for="eco-slide2"
+                        class="arrow prev"
+                        aria-label="Previous slide"
+                        >&#10094;</label
+                      >
+                      <label
+                        for="eco-slide1"
+                        class="arrow next"
+                        aria-label="Next slide"
+                        >&#10095;</label
+                      >
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </fieldset>
+          </section>
+
+          <section class="center txt-align-center margin-top-2rem">
+            <a href="contact.html" class="button btn-size btn-side-padding"
+              >VISIT US</a
+            >
+            <p class="remove-margin">for any questions or concerns.</p>
+            <p class="remove-margin">We are looking forward to see you.</p>
+          </section>
+        </section>
+      </main>
+
+      <footer
+        id="footer"
+        class="side-padding-20 footer-grid"
+        role="contentinfo"
+      ></footer>
     </div>
-    
+
+    <script src="./components/slideshows/slideshowData.js"></script>
+    <script src="./components/slideshows/exhibitionData.js"></script>
     <script src="./components/header.js"></script>
     <script src="./components/footer.js"></script>
+    <script src="./components/slideshows/exhibitionPage.js"></script>
     <script src="init.js"></script>
-</body>
+  </body>
 </html>

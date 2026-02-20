@@ -1,15 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Community Science Museum - Inspiring Science for All Ages">
-    <meta name="description" content="Explore fascinating exhibitions in robotics, AI, ecology, cosmology, and biology at the Community Science Museum. Designed for families, children, schools, and scientists alike!">
-    <meta name="keywords" content="science museum, robotics, AI, ecology, cosmology, biology, family-friendly, science exhibitions, STEM education">
+    <meta
+      name="title"
+      content="Community Science Museum - Inspiring Science for All Ages"
+    />
+    <meta
+      name="description"
+      content="Explore fascinating exhibitions in robotics, AI, ecology, cosmology, and biology at the Community Science Museum. Designed for families, children, schools, and scientists alike!"
+    />
+    <meta
+      name="keywords"
+      content="science museum, robotics, AI, ecology, cosmology, biology, family-friendly, science exhibitions, STEM education"
+    />
 
     <meta name="language" content="English" />
     <title>Home - Community Science Museum</title>
-    
+
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/homepage.css" />
     <link rel="stylesheet" href="styles/slideshows.css" />
@@ -18,103 +27,204 @@
       type="image/x-icon"
       href="img/logo/dark-color-small-logo.svg"
     />
-    
-</head>
-<body onload="initHomePageSlideshows()">
+  </head>
+  <body onload="initHomePageSlideshows()">
     <div class="main-container">
-        <header id="header" role="banner" class="flex row align-center menu-padding"></header>
-        <main role="main">
-            <div class="auto-slideshow bottom-shadow" aria-live="polite">
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="overlay side-padding-20 center color-white txt-align-center">
-                    <div class="home-logo">
-                        <img src="img/logo/color-light-logo.svg" alt="Community Science Museum" loading="lazy">
-                    </div>
-                    <h1 class="italic medium color-orange">Explore together</h1>
-                    <p class="h2 small-medium">Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
-                    <div class="width flex row justify-space-evenly">
-                        <a href="exhibitions.html" class="clickable button med-paragraph white-btn">Exhibitions</a>
-                        <a href="contact.html" class="clickable button med-paragraph white-btn">Contact</a>
-                    </div>
+      <header
+        id="header"
+        role="banner"
+        class="flex row align-center menu-padding"
+      ></header>
+      <main role="main">
+        <div class="auto-slideshow bottom-shadow" aria-live="polite">
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div
+            class="overlay side-padding-20 center color-white txt-align-center"
+          >
+            <div class="home-logo">
+              <img
+                src="img/logo/color-light-logo.svg"
+                alt="Community Science Museum"
+                loading="lazy"
+              />
+            </div>
+            <h1 class="italic medium color-orange">Explore together</h1>
+            <p class="h2 small-medium">
+              Come join us at the Community Science Museum where we’re committed
+              to making science accessible to all.
+            </p>
+            <div class="width flex row justify-space-evenly">
+              <a
+                href="exhibitions.html"
+                class="clickable button med-paragraph white-btn"
+                >Exhibitions</a
+              >
+              <a
+                href="contact.html"
+                class="clickable button med-paragraph white-btn"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <section class="grid-1-col-2-col">
+          <section
+            class="small-side-margin grid-name-information"
+            aria-labelledby="special-events-title"
+          >
+            <h2 id="special-events-title" class="large-title">
+              Special Events and Exhibitions
+            </h2>
+          </section>
+
+          <section
+            id="eventSlider"
+            class="event-parent grid-name-event-slide max-width-700px"
+          ></section>
+
+          <section class="small-side-margin grid-name-information2">
+            <p>
+              Come join us at the Community Science Museum where we’re committed
+              to making science accessible to all.
+            </p>
+            <p>
+              Over the course of human history, science has developed from our
+              early understanding of fire, wind, water, and earth to exploring
+              everything from galaxies far away to the very building blocks of
+              life itself.
+            </p>
+            <p>
+              The aim of our museum is to create a space where everyone can
+              experience the wonders of our discoveries and perhaps even ignite
+              a lifelong passion to continue the exploration of the world around
+              us.
+            </p>
+            <p>
+              We believe science should not be confined to the textbook, but
+              brought to live through exhibits. This is why we have over 1000
+              different exhibits on the many varied subjects of science to
+              explore. Many of these exhibits are designed for you to interact
+              with and play around to see science come to life (apart from the
+              dinosaur exhibits – they only come to life at night when
+              everyone’s gone home).
+            </p>
+          </section>
+        </section>
+
+        <section id="ehxibition-slideshow" class="event-parent"></section>
+
+        <section>
+          <h2 class="large-title side-margin-20">Explore</h2>
+
+          <section class="flex col">
+            <div class="explore-grid">
+              <div
+                class="banner-img full-size flex explore-banner-1 grid-3-4 max-height-200px grid-name-banner"
+              >
+                <div class="background-shadow btn-side-padding center">
+                  <h2
+                    class="btn-size txt-align-center white-btn color-white width-110 remove-margin"
+                  >
+                    FOR KIDS
+                  </h2>
                 </div>
-                
+              </div>
+              <div class="grid-name-info">
+                <p>
+                  Are you a young person looking to learn more about science?
+                  Come on down to our museum, there’s plenty to see and do.
+                </p>
+                <p>
+                  You can learn about Newtonian physics from our bumper swing,
+                  or why not travel back in time and meet our resident Woolly
+                  Mammoth? Our exhibits are designed to be accessible for
+                  interested minds, so make sure you come ready to learn and
+                  explore.
+                </p>
+                <p>
+                  We also have the Young Stars club which meets once a week on a
+                  Saturday between 10:00 and 13:00 where you’ll get to explore
+                  and experiment with our team of experts.
+                </p>
+                <p>
+                  During the school holidays we run special holiday clubs where
+                  you can join other children your age to go on a journey of
+                  discovery. Each holiday we pick a new theme to explore. To
+                  find out more about the holiday club and how you can join,
+                  send us a message.
+                </p>
+              </div>
             </div>
 
-            <section class="grid-1-col-2-col">
-                <section class="small-side-margin grid-name-information" aria-labelledby="special-events-title">
-                    <h2 id="special-events-title" class="large-title">Special Events and Exhibitions</h2>
-                </section>
+            <div class="explore-grid explore-grid-middle">
+              <div
+                class="banner-img full-size flex explore-banner-2 grid-3-4 max-height-200px grid-name-banner"
+              >
+                <div class="background-shadow btn-side-padding center">
+                  <h2
+                    class="btn-size txt-align-center white-btn color-white width-110 remove-margin"
+                  >
+                    FOR TEACHERS
+                  </h2>
+                </div>
+              </div>
+              <div class="grid-name-info">
+                <p>
+                  As a community-driven museum, we want to work with schools to
+                  create places of learning and exploring. Our team are on hand
+                  to give your students guided tours of the museum, teach them
+                  in our learning laboratory, and provide great video
+                  presentations that will excite and inspire them.
+                </p>
+                <p>
+                  Please get in touch with us here to find out more about our
+                  facilities and to arrange a time to bring your students
+                  through for a visit.
+                </p>
+              </div>
+            </div>
 
+            <div class="explore-grid">
+              <div
+                class="banner-img full-size flex explore-banner-3 grid-3-4 max-height-200px grid-name-banner"
+              >
+                <div class="background-shadow btn-side-padding center">
+                  <h2
+                    class="btn-size txt-align-center white-btn color-white width-110 remove-margin"
+                  >
+                    RESEARCHERS
+                  </h2>
+                </div>
+              </div>
+              <div class="grid-name-info">
+                <p>
+                  Are you looking to get involved with our team of researchers
+                  and academics? Our museum offers various ways for you to use
+                  our resources and contribute towards them. We have online
+                  records, laboratory space, and a working relationship with a
+                  number of universities around the country.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
 
-                <section id="eventSlider" class="event-parent grid-name-event-slide max-width-700px"></section>
-
-                <section class="small-side-margin grid-name-information2">
-                    <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
-                    <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
-                    <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
-                    <p>We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
-                </section>
-            </section>
-
-            <section id="ehxibition-slideshow" class="event-parent"></section>
-
-            <section>
-                <h2 class="large-title side-margin-20">Explore</h2>
-
-                <section class="flex col">
-                    <div class="explore-grid">
-                        <div class="banner-img full-size flex explore-banner-1 grid-3-4 max-height-200px grid-name-banner">
-                            <div class="background-shadow btn-side-padding center">
-                                <h2 class="btn-size txt-align-center white-btn color-white width-110 remove-margin">FOR KIDS</h2>
-                            </div>
-                        </div>
-                        <div class="grid-name-info">
-                            <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
-                            <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
-                            <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.</p>
-                            <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
-                        </div>
-        
-                    </div>
-
-                    <div class="explore-grid explore-grid-middle">
-                        <div class="banner-img full-size flex explore-banner-2 grid-3-4 max-height-200px grid-name-banner">
-                            <div class="background-shadow btn-side-padding center">
-                                <h2 class="btn-size txt-align-center white-btn color-white width-110 remove-margin">FOR TEACHERS</h2>
-                            </div>
-                        </div>
-                        <div class="grid-name-info">
-                            <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.</p>
-                            <p>Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
-                        </div>
-                    </div>
-    
-                    <div class="explore-grid">
-                        <div class="banner-img full-size flex explore-banner-3 grid-3-4 max-height-200px grid-name-banner">
-                            <div class="background-shadow btn-side-padding center">
-                                <h2 class="btn-size txt-align-center white-btn color-white width-110 remove-margin">RESEARCHERS</h2>
-                            </div>
-                        </div>
-                        <div class="grid-name-info">
-                            <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
-                        </div>
-                    </div>
-                </section>
-
-            </section>
-            
-        </main>
-
-        <footer id="footer" class="side-padding-20 footer-grid" role="contentinfo"></footer>
+      <footer
+        id="footer"
+        class="side-padding-20 footer-grid"
+        role="contentinfo"
+      ></footer>
     </div>
-    
+
     <script src="./components/slideshows/slideshowData.js"></script>
     <script src="./components/slideshows/eventSlideshows.js"></script>
     <script src="./components/header.js"></script>
     <script src="./components/footer.js"></script>
     <script src="init.js"></script>
-</body>
+  </body>
 </html>
