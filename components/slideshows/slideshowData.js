@@ -15,3 +15,27 @@ const events = [
         description: "On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.",
     },
 ];
+
+const ehxibitionSlideshow = [
+    {
+        id: 1,
+        title: "COSMOLOGY",
+    },
+    {
+        id: 2,
+        title: "EVOLUTION",
+    },
+    {
+        id: 3,
+        title: "BIOLOGY AND MEDICINE",
+    },
+    {
+        id: 4,
+        title: "ROBOTICS AND AI",
+    },
+    {
+        id: 5,
+        title: "ECOLOGY",
+
+    },
+];

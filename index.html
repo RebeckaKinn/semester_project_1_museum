@@ -20,7 +20,7 @@
     />
     
 </head>
-<body onload="showEventSlideshow()">
+<body onload="initHomePageSlideshows()">
     <div class="main-container">
         <header id="header" role="banner" class="flex row align-center menu-padding"></header>
         <main role="main">
@@ -59,69 +59,7 @@
                 </section>
             </section>
 
-            <section class="event-parent">
-                <input class="hidden" type="radio" name="exhibition-slider" id="exh-slide1" checked>
-                <input class="hidden" type="radio" name="exhibition-slider" id="exh-slide2">
-                <input class="hidden" type="radio" name="exhibition-slider" id="exh-slide3">
-                <input class="hidden" type="radio" name="exhibition-slider" id="exh-slide4">
-                <input class="hidden" type="radio" name="exhibition-slider" id="exh-slide5">
-                
-                <div class="event-slides ehxibition-slideshow">
-                    <div class="event-container exhibition-slideshow-1 bottom-inset-top-shadow">
-                        <article class="background-shadow btn-side-padding placement bottom-shadow">
-                            <h3 class="color-white paragraph italic light">Exhibition tour</h3>
-                            <h4 class="color-white btn-size remove-margin">COSMOLOGY</h4>
-                        </article>
-                    </div>
-
-                    <div class="event-container exhibition-slideshow-2 bottom-inset-top-shadow">
-                        <article class="background-shadow btn-side-padding placement bottom-shadow">
-                            <h3 class="color-white paragraph italic light">Exhibition tour</h3>
-                            <h4 class="color-white btn-size remove-margin">EVOLUTION</h4>
-                        </article>
-                    </div>
-
-                    <div class="event-container exhibition-slideshow-3 bottom-inset-top-shadow">
-                        <article class="background-shadow btn-side-padding placement bottom-shadow">
-                            <h3 class="color-white paragraph italic light">Exhibition tour</h3>
-                            <h4 class="color-white btn-size remove-margin">BIOLOGY AND MEDICINE</h4>
-                        </article>
-                    </div>
-
-                    <div class="event-container exhibition-slideshow-4 bottom-inset-top-shadow">
-                        <article class="background-shadow btn-side-padding placement bottom-shadow">
-                            <h3 class="color-white paragraph italic light">Exhibition tour</h3>
-                            <h4 class="color-white btn-size remove-margin">ROBOTICS AND AI</h4>
-                        </article>
-                    </div>
-
-                    <div class="event-container exhibition-slideshow-5 bottom-inset-top-shadow">
-                        <article class="background-shadow btn-side-padding placement bottom-shadow">
-                            <h3 class="color-white paragraph italic light">Exhibition tour</h3>
-                            <h4 class="color-white btn-size remove-margin">ECOLOGY</h4>
-                        </article>
-                    </div>
-                </div>
-
-                <div class="nav-circles">
-                    <label for="exh-slide1" class="circle" aria-label="First slide">
-                      <span></span>
-                    </label>
-                    <label for="exh-slide2" class="circle" aria-label="Second slide">
-                      <span></span>
-                    </label>
-                    <label for="exh-slide3" class="circle" aria-label="Third slide">
-                      <span></span>
-                    </label>
-                    <label for="exh-slide4" class="circle" aria-label="Fourth slide">
-                      <span></span>
-                    </label>
-                    <label for="exh-slide5" class="circle" aria-label="Last slide">
-                      <span></span>
-                    </label>
-                  </div>
-
-            </section>
+            <section id="ehxibition-slideshow" class="event-parent"></section>
 
             <section>
                 <h2 class="large-title side-margin-20">Explore</h2>
