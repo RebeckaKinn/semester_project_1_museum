@@ -20,14 +20,10 @@
     />
     
 </head>
-<body>
-
+<body onload="showEventSlideshow()">
     <div class="main-container">
-
         <header id="header" role="banner" class="flex row align-center menu-padding"></header>
-
         <main role="main">
-
             <div class="auto-slideshow bottom-shadow" aria-live="polite">
                 <div class="slide"></div>
                 <div class="slide"></div>
@@ -53,55 +49,7 @@
                 </section>
 
 
-                <section class="event-parent grid-name-event-slide max-width-700px">
-                    <input class="hidden" type="radio" name="event-slider" id="event-slide1" checked>
-                    <input class="hidden" type="radio" name="event-slider" id="event-slide2">
-                    <input class="hidden" type="radio" name="event-slider" id="event-slide3">
-                    
-                    <div class="event-slides">
-                        <div class="event-container event-img-1 bottom-inset-top-shadow">
-                            <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                <h2 class="h3 color-orange">Visiting Professor of Aeronautics</h2>
-                                <p class="med-paragraph color-white">It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
-                            </article>
-                        </div>
-    
-                        <div class="event-container event-img-2 bottom-inset-top-shadow">
-                            <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                <h2 class="h3 color-orange">Night in the Museum</h2>
-                                <p class="med-paragraph color-white">Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
-                            </article>
-                        </div>
-    
-                        <div class="event-container event-img-3 bottom-inset-top-shadow">
-                            <article class="background-shadow btn-side-padding placement bottom-shadow">
-                                <h2 class="h3 color-orange">Energetica Exhibition on Loan</h2>
-                                <p class="med-paragraph color-white">On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="nav-circles hidden-on-desktop">
-                        <label for="event-slide1" class="circle" aria-label="First slide">
-                            <span></span>
-                        </label>
-                        <label for="event-slide2" class="circle" aria-label="Second slide">
-                            <span></span>
-                        </label>
-                        <label for="event-slide3" class="circle" aria-label="Last slide">
-                            <span></span>
-                        </label>
-                    </div>
-
-                    <div class="arrows hidden-on-mobile">
-                        <label for="event-slide3" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                        <label for="event-slide2" class="arrow next" aria-label="Next slide">&#10095;</label>
-                        <label for="event-slide1" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                        <label for="event-slide3" class="arrow next" aria-label="Next slide">&#10095;</label>
-                        <label for="event-slide2" class="arrow prev" aria-label="Previous slide">&#10094;</label>
-                        <label for="event-slide1" class="arrow next" aria-label="Next slide">&#10095;</label>
-                    </div>
-                </section>
+                <section id="eventSlider" class="event-parent grid-name-event-slide max-width-700px"></section>
 
                 <section class="small-side-margin grid-name-information2">
                     <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
@@ -225,6 +173,8 @@
         <footer id="footer" class="side-padding-20 footer-grid" role="contentinfo"></footer>
     </div>
     
+    <script src="./components/slideshows/slideshowData.js"></script>
+    <script src="./components/slideshows/eventSlideshows.js"></script>
     <script src="./components/header.js"></script>
     <script src="./components/footer.js"></script>
     <script src="init.js"></script>
